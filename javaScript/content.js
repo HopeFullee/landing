@@ -306,7 +306,7 @@ function select_2(){
 			charState('freak', '40');
 			textBox()
 			charLog('장난입니당 ㅋㅋ');
-			charLog('둘러보다 가세요 ㅋㅋ');
+			charLog('둘러보다 가세요 ㅋㅋ', '1000');
 
 			userLog('예압', 'B');
 			select_3();
