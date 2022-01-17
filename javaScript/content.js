@@ -26,7 +26,7 @@ const canvasWidth = canvas.width = 250;
 const canvasHeight = canvas.height = 500;
 
 const hopeSheet = new Image();
-hopeSheet.src = "../img/hope-sprite.png";
+hopeSheet.src = "./img/hope-sprite.png";
 const frameWidth = 250;
 const frameHeight = 500;
 
