@@ -1,0 +1,317 @@
+@charset "utf-8";
+
+/************    CONTENT SECTION    ************/
+
+.content-wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.con-border {
+    width: 1200px;
+    height: 90%;
+}
+
+
+
+
+
+/***   CONTENT TOP   ***/
+
+.con-top {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.con-title {
+    font-family: Metropolis, sans-serif;
+    font-size: 72px;
+    color: black;
+}
+
+.back-btn {
+    position: relative;
+    font-family: Metropolis, sans-serif;
+    font-size: 32px;
+    color: white;
+    height: 50px;
+    width: 130px;
+    padding-top: 5px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(to right, #fe03b4, #ee0202);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.back-btn:before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 30px;
+    background: #f3f3f3;
+    box-shadow: 0 0 10px #fff;
+    filter: blur(1px);
+    opacity: 0.9;
+    top: -30px;
+    transition: 0.5s;
+    transform: rotate(-20deg) translateX(-60px);
+}
+
+.back-btn:hover:before {
+    transform: rotate(-20deg) translate(140px, 70px);
+}
+
+
+
+
+/***   CONTENT BOTTOM   ***/
+
+.con-btm {
+    width: 100%;
+    height: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************       I N T E R V I E W        **********************/
+
+
+.monitor {
+    position: relative;
+    height: 75%;
+    width: 100%;
+    background: url('../img/myroom-gif.gif') no-repeat center center;
+    background-size: 1200px 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.character-box {
+    width: 600px;
+    height: 160px;
+    background: url('../img/character-box.png') no-repeat;
+    background-size: 600px 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.character-text {
+    font-family: pixel, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    position: relative;
+    width: 95%;
+    text-align: center;
+    padding: 3px;
+}
+
+.character-text::before,
+.character-text::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.character-text::before {
+    background: #f0d9ff;
+    animation: typewriter 1.5s ease forwards;
+}
+
+@keyframes typewriter {
+    to { 
+        left : 100% 
+    }
+}
+
+#canvas {
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    z-index: 10;
+}
+
+
+.user-box {
+    height: 25%;
+    width: 100%;
+    background: url('../img/user-box.png') no-repeat;
+    background-size: 1200px 196px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.user-text {
+    width: 15%;
+    border: 15px solid black;
+    border-image: url('../img/border-image.png') 33% round;
+    font-family: pixel, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.user-text:hover {
+    border-image: url('../img/border-image2.png') 33% round;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************       G A L L E R Y        **********************/
+
+
+.slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background: peachpuff;
+}
+
+.slider-button {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-button img {
+    width: 40px;
+    height: 140px;
+}
+
+.next,
+.prev {
+    border: none;
+    background-color: rgba(50, 50, 50, .3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.black-out {
+    background: rgb(30, 30, 30);
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+.flex {
+    display: flex;
+}
+
+
+
+.fade-in {
+    animation: fadeIn ease 1.5s;
+    -webkit-animation: fadeIn ease 1.5s;
+    -moz-animation: fadeIn ease 1.5s;
+    -o-animation: fadeIn ease 1.5s;
+    -ms-animation: fadeIn ease 1.5s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
